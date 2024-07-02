@@ -7,7 +7,7 @@ export default function Navbar() {
         <>
             <nav className="navbar">
                 <div className="nike-img">
-                    <NavLink to="/Nike-1/"><img className="nike-img" src="../src/images/nike-logo.png" alt="" /></NavLink>
+                    <NavLink to="/Nike-1/"><img className="nike-img" src="https://i.postimg.cc/FKTF3VN6/nike-logo.png" alt="" /></NavLink>
                 </div>
                 <div className="nav-links">
                     <ul className="nav-links-list">

@@ -8,7 +8,10 @@ export default function DontMiss(){
                     Don't Miss
                 </div>
                 <div className="shoe-video">
-                    <video src="../src/images/shoes-video.mp4" autoPlay muted loop></video>
+                    {/* <video src="" autoPlay muted loop></video> */}
+                    
+                   
+
                 </div>
                 <div className="dont-text">
                     <div className="txt-2">JORDAN SPORT</div>

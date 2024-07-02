@@ -5,7 +5,7 @@ export default function ShoeBanner(){
         <>
             <div className="for-banner">
                 <div className="shoe-ban-img">
-                    <img src="../src/images/shoe-banner.png" alt="" />
+                    <img src="https://i.postimg.cc/CLbFmgwk/shoe-banner.webp" alt="" />
                 </div>
                 <div className="banner-txt">
                     <div className="txt-1">Nike Pegasus 41</div>

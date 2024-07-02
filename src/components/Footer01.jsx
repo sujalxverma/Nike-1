@@ -30,8 +30,8 @@ export default () => {
 
     return (
         <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
-            <div className="max-w-lg sm:mx-auto sm:text-center">
-                <img src="../src/images/nike-logo.png" className="w-32 sm:mx-auto" />
+            <div className=" foot-flex max-w-lg sm:mx-auto sm:text-center">
+                <img className="nike_footer" src="https://i.postimg.cc/FKTF3VN6/nike-logo.png" />
                 <p className="leading-relaxed mt-2 text-[15px]">
                    
                 </p>

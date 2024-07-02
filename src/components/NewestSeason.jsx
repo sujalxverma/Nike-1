@@ -12,7 +12,7 @@ export default function NewestSeason() {
     const data = [
         {
             id: 1,
-            imageSeason: '../src/images/season-1.png',
+            imageSeason: 'https://i.postimg.cc/1RwhZrbZ/season-1.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 7000.00
@@ -20,63 +20,63 @@ export default function NewestSeason() {
 
         {
             id: 2,
-            imageSeason: '../src/images/season-2.png',
+            imageSeason: 'https://i.postimg.cc/fbJpqcYp/season-2.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 8000.00
         },
         {
             id: 3,
-            imageSeason: '../src/images/season-3.png',
+            imageSeason: 'https://i.postimg.cc/VNpTxJR6/season-3.webpg',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 9000.00
         },
         {
             id: 4,
-            imageSeason: '../src/images/season-4.png',
+            imageSeason: 'https://i.postimg.cc/mD3wmkpK/season-5.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 12000.00
         },
         {
             id: 5,
-            imageSeason: '../src/images/season-5.png',
+            imageSeason: 'https://i.postimg.cc/d3q9pFz3/season-4.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 16000.00
         },
         {
             id: 6,
-            imageSeason: '../src/images/season-6.png',
+            imageSeason: 'https://i.postimg.cc/X7Y8gVfD/season-6.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 28000.00
         },
         {
             id: 7,
-            imageSeason: '../src/images/season-7.png',
+            imageSeason: 'https://i.postimg.cc/m2pSX0VZ/season-7.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 30000.00
         },
         {
             id: 8,
-            imageSeason: '../src/images/season-8.png',
+            imageSeason: 'https://i.postimg.cc/nhsG60w4/season-9.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 31000.00
         },
         {
             id: 9,
-            imageSeason: '../src/images/season-9.png',
+            imageSeason: 'https://i.postimg.cc/qv9x0y99/season-8.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 38000.00
         },
         {
             id: 10,
-            imageSeason: '../src/images/season-10.png',
+            imageSeason: 'https://i.postimg.cc/rpxCpzTz/season-10.webp',
             titleText: 'Nike Reax * TR',
             greyText: 'Men\'s Workout Shoes',
             price: 43000.00
