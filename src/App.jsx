@@ -10,9 +10,9 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<Layout />}>
+      <Route path='/Nike-1/' element={<Layout />}>
         <Route path='signin' element={<SignIn />} />
-        <Route path='' element={<Home />} />
+        <Route path='/Nike-1/' element={<Home />} />
         <Route path='cart' element={<Cart />} />
 
 
