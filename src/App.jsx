@@ -11,9 +11,9 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/Nike-1/' element={<Layout />}>
-        <Route path='signin' element={<SignIn />} />
+        <Route path='/Nike-1/signin' element={<SignIn />} />
         <Route path='/Nike-1/' element={<Home />} />
-        <Route path='cart' element={<Cart />} />
+        <Route path='/Nike-1/cart' element={<Cart />} />
 
 
       </Route>
