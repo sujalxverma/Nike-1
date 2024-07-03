@@ -22,12 +22,14 @@ export default function Layout(){
     )
 
     const [price,setPrice] = useState(0)
+    const [signin,setsignin] = useState("Sign In")
+    const [signed,setsigned] = useState(false)
 
 
     
     return(
 
-        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems,price,setPrice,checkedOut,setcheckedOut}}>
+        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems,price,setPrice,checkedOut,setcheckedOut,signin,setsignin,signed,setsigned}}>
             <TopBar />
             <Navbar />
             <Outlet />

@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 export default function TopBar(){
 
+    const{signin,setsignin} = useCart()
 
     return(
         <>
@@ -15,7 +17,7 @@ export default function TopBar(){
                 <li className="top-list">Find a Store</li>
                 <li className="top-list">Help</li>
                 <li className="top-list"><NavLink to='/Nike-1/cart'>Cart</NavLink></li>
-                <li className="top-list"><NavLink to='/Nike-1/signin'>Sign In</NavLink></li>
+                <li className="top-list"><NavLink to='/Nike-1/signin'>{signin}</NavLink></li>
             </ul>
         </div>
     </nav>

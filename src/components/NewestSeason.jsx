@@ -82,6 +82,7 @@ export default function NewestSeason() {
             price: 43000.00
         }
     ]
+
     const {price} = useCart()
     const {setPrice} = useCart()
 
@@ -145,6 +146,7 @@ localStorage.setItem("NikeCart", JSON.stringify(cartItems))
 
     return (
         <>
+        
          <div className="seasonHeading">Newest of the Season</div>
             <div className="Card-box">
                 {NewCollection}

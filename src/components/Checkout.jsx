@@ -29,13 +29,7 @@ export default function Checkout(){
             className="w-full pl-12 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
         />
     </div>
-    <div className="relative max-w-80 email-f">
-        <input
-            type="text"
-            placeholder="Enter your name"
-            className="w-full pl-12 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-        />
-    </div>
+
     <button onClick={handleClick} className="check-btn">Confirm</button>
     </div>
     )
