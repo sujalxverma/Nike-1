@@ -14,6 +14,8 @@ export default function Layout(){
     
    
     const [cartNumber,setcartNumber] = useState(0)
+
+    const [checkedOut,setcheckedOut] = useState(true)
     
     const [cartItems,setcartItems] = useState(
        []
@@ -25,7 +27,7 @@ export default function Layout(){
     
     return(
 
-        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems,price,setPrice}}>
+        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems,price,setPrice,checkedOut,setcheckedOut}}>
             <TopBar />
             <Navbar />
             <Outlet />

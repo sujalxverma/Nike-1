@@ -354,6 +354,7 @@
 
 }
 
+
 .bag{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -621,4 +622,50 @@ width: 70px;
 
 .dont-text .txt-2{
   top: 0px;
+}
+
+/* --------------------------------------------------------- */
+.checkout-box{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  
+}
+.check-title{
+  font-size: 70px;
+}
+
+.email-f{
+  min-width: 800px;
+  color: black;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
+}
+
+.checkout-box .check-btn{
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+.checkout-box .check-btn:active{
+  background-color: gray;
+}
+
+
+.final-box{
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.thankyou{
+  font-size: 90px;
 }

@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { CartProvider, useCart } from "../context/CartContext";
+import { NavLink } from "react-router-dom";
 
 
 export default function Cart() {
@@ -8,14 +9,24 @@ export default function Cart() {
     const { cartItems } = useCart()
     const { setcartItems } = useCart()
     const { setcartNumber } = useCart()
+    const {checkedOut} = useCart()
+    const {setcheckedOut} = useCart()
 
     const { price } = useCart()
+    const { setPrice } = useCart()
     let myList = []
-    
+
     localStorage.setItem("NikeCart", JSON.stringify(cartItems))
     myList = Array.from(JSON.parse(localStorage.getItem("NikeCart")))
 
+
+    const checkBag = ()=>{
+            console.log(checkedOut)
+            setcheckedOut((prev) => !prev)
+    }
+
     const handleClick = (e) => {
+
         setcartNumber((prev) => prev - 1)
 
         let cartObj = {}
@@ -23,13 +34,22 @@ export default function Cart() {
         for (let i = 0; i < cartItems.length; i++) {
             if (cartItems[i].id == e.target.id) {
                 cartObj = cartItems[i]
+                setPrice((prev) => prev -= cartObj.price)
                 break
             }
         }
 
         console.log(cartObj)
-       
 
+        myList = myList.filter((curelem) => {
+            return (curelem.id != cartObj.id)
+
+        })
+
+        setcartItems(myList)
+
+        localStorage.setItem("NikeCart", JSON.stringify(cartItems))
+        console.log(myList)
 
     }
 
@@ -95,9 +115,10 @@ export default function Cart() {
                     </div>
 
                     <div className="checkout-btn">
-                        <button className="check-btn">
+                    <NavLink to="/Nike-1/checkout"><button onClick={checkBag} className="check-btn">
                             Checkcout
-                        </button>
+                        </button></NavLink>
+                       
                     </div>
                 </div>
 

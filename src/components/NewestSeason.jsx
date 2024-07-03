@@ -96,7 +96,7 @@ const handleClick = (event)=>{
             
         }
     }
-    // console.log(cartobj)
+
     function update(cartobj){
         setcartItems((prev)=>[...prev,cartobj])
        

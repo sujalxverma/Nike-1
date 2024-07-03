@@ -5,6 +5,7 @@ import SignIn from './components/SignIn'
 import Home from './components/Home'
 import Cart from './components/Cart'
 import { CartProvider } from './context/CartContext'
+import Checkout from './components/Checkout'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/Nike-1/signin' element={<SignIn />} />
         <Route path='/Nike-1/' element={<Home />} />
         <Route path='/Nike-1/cart' element={<Cart />} />
+        <Route path='/Nike-1/checkout' element={<Checkout />} />
 
 
       </Route>
