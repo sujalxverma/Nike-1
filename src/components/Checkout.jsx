@@ -9,9 +9,10 @@ export default function Checkout(){
     const {setcheckedOut} = useCart()
     const {setcartItems} = useCart()
     const {setPrice} = useCart()
-
+    const {cartNumber,setcartNumber} = useCart()
     const handleClick = ()=>{
         setcheckedOut((prev)=> !prev)
+        setcartNumber(0)
         console.log(checkedOut)
         setcartItems((prev)=>[])
         setPrice(0)

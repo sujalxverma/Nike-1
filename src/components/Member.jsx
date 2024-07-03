@@ -1,6 +1,6 @@
 import React from "react";
-
-export default function Member(){
+import { NavLink } from "react-router-dom";
+export default function Member() {
 
     const data = [
         {
@@ -38,53 +38,42 @@ export default function Member(){
             titleText: 'Nike Reax * TR',
             greyText: 'Your Exclusive Access',
             price: 'Explore'
-        }       
+        }
     ]
 
     const NewCollection = data.map((curElem) => {
         return (
             <>
-               
+
                 <div className="eachCard">
-                <div className="mem-txt-1">{curElem.titleText}</div>
+                    <div className="mem-txt-1">{curElem.titleText}</div>
                     <div className="mem-txt-2">{curElem.greyText}</div>
-                    <div className="mem-txt-3"><button className="mem-btn">{curElem.price}</button></div>
-                    <img src={curElem.imageSeason} alt="" />
-                   
+                    <div className="mem-txt-3">
+                        <NavLink to="/Nike-1/shop">
+                            <button className="mem-btn">{curElem.price}</button></NavLink>
+
+                    </div>
+                    <img  src={curElem.imageSeason} alt="" />
+
                 </div>
 
+                {/* <NavLink to="/Nike-1/shop"></NavLink> */}
 
-                {/* <div className="Cards">
-                    <div className="card-img">
-                        <img src={curElem.imageSeason} alt="" />
-                    </div>
-                    <div className="Card-txt">
-                        <div className="c-txt-1">
-                            {curElem.titleText}
-                        </div>
-                        <div className="c-txt-2">
-                            {curElem.greyText}
-                        </div>
-                        <div className="c-txt-3">
-                            MRP : Rs. {curElem.price}
-                        </div>
-                    </div>
-                    <button  id={curElem.id} onClick={handleClick} className="Card-btn">Add to Cart</button>
-                </div> */}
+
 
             </>
         )
     })
 
 
-return(
-    <>
-    <div className="seasonHeading">Member Benefits</div>
-    <div className="Member-box">
-        {NewCollection}
-    </div>
+    return (
+        <>
+            <div className="seasonHeading">Member Benefits</div>
+            <div className="Member-box">
+                {NewCollection}
+            </div>
 
-    </>
-)
+        </>
+    )
 
 }

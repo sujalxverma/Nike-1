@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import { useCart } from "../context/CartContext";
 export default function Shop(){
 
@@ -9,6 +9,11 @@ export default function Shop(){
         
     const {price} = useCart()
     const {setPrice} = useCart()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to top on route change
+      }, []);
 
     const data = [
         {

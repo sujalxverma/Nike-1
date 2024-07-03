@@ -7,6 +7,7 @@ import Cart from './components/Cart'
 import { CartProvider } from './context/CartContext'
 import Checkout from './components/Checkout'
 import Shop from './components/Shop'
+import About from './components/About'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Nike-1/cart' element={<Cart />} />
         <Route path='/Nike-1/checkout' element={<Checkout />} />
         <Route path='/Nike-1/shop' element={<Shop />} />
+        <Route path='/Nike-1/about' element={<About />} />
 
 
       </Route>

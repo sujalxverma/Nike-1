@@ -9,7 +9,7 @@ export default function DontMiss(){
                 </div>
                 <div className="shoe-video">
                    
-                    <img className="shoe-video" src="https://i.postimg.cc/5yst1c2n/dont-miss.jpg" alt="" />
+                    <img  src="https://i.postimg.cc/5yst1c2n/dont-miss.jpg" alt="" />
                     
                 </div>
                 <div className="dont-text">

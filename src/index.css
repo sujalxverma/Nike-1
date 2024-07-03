@@ -49,6 +49,7 @@
   justify-content: space-between;
   max-width: 1350px;
   margin: auto;
+  background-color: #f9f5f5;
   
 }
 .top-list{
@@ -145,6 +146,7 @@
 
 .shoe-ban-img img{
   width: 1350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .txt-2{
@@ -575,6 +577,7 @@ width: 70px;
   font-weight: 500;
   font-style: normal;
   max-height: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   /* border: 1px solid blue; */
 }
 
@@ -611,15 +614,18 @@ width: 70px;
   color: black;
   padding: 5px 15px;
   border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* ---------------------------------------------------------------------------- */
 
 .shoe-video img{
   width: 1350px;
+  
 }
-
+.shoe-video{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 .dont-text .txt-2{
   top: 0px;
 }
@@ -721,4 +727,45 @@ width: 70px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
 
+ }
+/* ---------------------------------------------------------
+ */
+ .card-img{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ .spot-part{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+
+
+ /* -------------------------------------------------------- */
+
+ .about-page{
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  margin-bottom: 900px;
+
+ }
+
+ .about-1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+ }
+ .about-2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+ }
+
+ .about-3{
+  /* display: flex; */
+
+  /* justify-content: space-between; */
  }

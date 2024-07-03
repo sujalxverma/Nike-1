@@ -15,11 +15,11 @@ export default function Navbar() {
                 </div>
                 <div className="nav-links">
                     <ul className="nav-links-list">
-                        <li>New & Featured</li>
-                        <NavLink to="/Nike-1/shop"> <li>Men</li></NavLink>
-
-                        <li>Women</li>
-                        <li>SNKRS</li>
+                        {/* <li>New & Featured</li> */}
+                        <NavLink to="/Nike-1/shop"> <li>New & Featured</li></NavLink>
+                        <NavLink to="/Nike-1/about"> <li>About</li></NavLink>
+                        {/* <li>Women</li> */}
+                        {/* <li>SNKRS</li> */}
                     </ul>
                 </div>
                 <div className="cart-tag">

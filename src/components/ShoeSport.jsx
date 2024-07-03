@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 export default function ShoeSport(){
 
     const data = [
@@ -71,7 +71,9 @@ export default function ShoeSport(){
                                 {curElem.greyText}
                             </div>
                             <div className="c-txt-3">
-                                Shop
+                               
+                                <NavLink to="/Nike-1/shop">Shop</NavLink>
+                              
                             </div>
                         </div>
                        
