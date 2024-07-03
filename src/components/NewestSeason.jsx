@@ -82,6 +82,8 @@ export default function NewestSeason() {
             price: 43000.00
         }
     ]
+    const {price} = useCart()
+    const {setPrice} = useCart()
 
 const handleClick = (event)=>{
 
@@ -89,17 +91,23 @@ const handleClick = (event)=>{
     for(let i = 0; i<10 ; i++){
         if(event.target.id == data[i].id){
             cartobj = data[i]
+            setPrice((prev)=>prev+=cartobj.price)
+            
+            
         }
     }
     // console.log(cartobj)
     function update(cartobj){
         setcartItems((prev)=>[...prev,cartobj])
+       
+        
     }
 
    
 update(cartobj)
+localStorage.setItem("NikeCart", JSON.stringify(cartItems))
     
-    console.log(cartItems)
+  setcartNumber((prev)=>prev+1)
     
 }
 

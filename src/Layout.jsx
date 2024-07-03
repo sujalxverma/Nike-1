@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import TopBar from "./components/Topbar";
 import { CartProvider } from "./context/CartContext";
@@ -16,21 +16,16 @@ export default function Layout(){
     const [cartNumber,setcartNumber] = useState(0)
     
     const [cartItems,setcartItems] = useState(
-       [
-        // {
-        //     id: 2,
-        //     imageSeason: '../src/images/season-2.png',
-        //     titleText: 'Nike Reax * TR',
-        //     greyText: 'Men\'s Workout Shoes',
-        //     price: 8000.00
-        // },
-       ]
+       []
     )
 
+    const [price,setPrice] = useState(0)
 
+
+    
     return(
 
-        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems}}>
+        <CartProvider value={{cartNumber,setcartNumber,cartItems,setcartItems,price,setPrice}}>
             <TopBar />
             <Navbar />
             <Outlet />

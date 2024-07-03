@@ -258,14 +258,111 @@
 /* ----------------------------------------------------------------- */
 .cart-item{
   display: flex;
-  width: 80%;
-  border: 1px solid blue;
+  min-width: 700px;
+  /* border: 1px solid blue; */
   justify-content: space-between;
+  margin-bottom: 30px;
+  border-top: 1px solid gray;
+  padding-top: 40px;
+  padding-bottom: 10px;
 
 }
 
+
+
+.myCart{
+  /* border: 1px solid green; */
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+  /* flex-direction: column; */
+}
+.summary{
+  /* border: 1px solid red; */
+  min-width: 400px;
+  
+}
+.summ-head{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.sub-div,.sub-div-2,.total-price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding-bottom: 10px;
+
+}
+
+.nike-cart-div{
+  /* border: 1px solid red; */
+}
+
+
+.total-price{
+  margin-top: 15px;
+  border-top: 1px solid gray;
+  padding-top: 14px;
+}
+.check-btn{
+  background-color: black;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 30px;
+  padding:10px 0px ;
+  color: white;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+.check-btn:hover{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
 .cart-item-img{
-  max-width: 300px;
+  display: flex;
+  /* border:  1px solid red; */
+  width: 400px;
+  justify-content: space-between;
+}
+
+.cart-images{
+  max-width: 200px;
+
+}
+.c-txt-01{
+  margin-top: 10px;
+}
+.c-txt-02{
+  color: grey;
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.cart-price{
+  margin-top: 10px;
+  /* font-weight: 600; */
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.bag{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  /* margin-left: 80px; */
+  font-size: 24px;
+  font-weight: 700;
+  /* margin-top:0px; */
+  margin-bottom: 30px;
 }
 
 .c-txt-2{
