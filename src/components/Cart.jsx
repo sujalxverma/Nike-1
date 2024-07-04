@@ -116,7 +116,7 @@ export default function Cart() {
 
                     <div className="checkout-btn">
                     <NavLink to="/Nike-1/checkout"><button onClick={checkBag} className="check-btn">
-                            Checkcout
+                            Checkout
                         </button></NavLink>
                        
                     </div>
